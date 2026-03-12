@@ -66,6 +66,12 @@ function loadSampleProducts() {
         { id: '7', name: 'Matera Blanca Oro', description: 'Matera (Barro, pintada) de 40cm diametro x 60cm de alto', price: 120000, category: 'materas', image: './img/materablancaoro.png' },
         { id: '8', name: 'Matera Indijena Azul', description: 'Matera (Barro, pintada) de 40cm diametro x 60cm de alto', price: 120000, category: 'materas', image: './img/materaindigenaazul.png' },
         { id: '9', name: 'Estante pino canadiense', description: 'Estante madera para materas 180cmm de alto por 80cm de ancho y 30 de fondo', price: 250000, category: 'madera', image: './img/estantenelson.png' },
+        { id: '10', name: 'Anillo oro 18K', description: 'Anillo en oro 18K con esmeralda y diamantes ', price: 8500000, category: 'joyas', image: './img/anillo.png' },
+        { id: '11', name: 'Cadena Dije oro 18K', description: 'Cadena con dije de hoja ', price: 3500000, category: 'joyas', image: './img/cadenaDijeOro.png' },
+        { id: '12', name: 'Collar oro 18K', description: 'Collar oro 18K con dige en diamantes ', price: 6500000, category: 'joyas', image: './img/collarOro.png' },
+        { id: '13', name: 'Aretes plata S925', description: 'Aretes plata con circones ', price: 130000, category: 'joyas', image: './img/aretesPlata.png' },
+        { id: '14', name: 'Cadena plata S925', description: 'Cadena con dije de rama ', price: 150000, category: 'joyas', image: './img/cadenaDijePlata.png' },
+        { id: '15', name: 'Cadena plata S925', description: 'Cadena con dije de hoja  ', price: 145000, category: 'joyas', image: './img/collarDijePlata.png' },
     ]; 
     applyFiltersAndSearch();
 }
@@ -79,6 +85,7 @@ function applyFiltersAndSearch() {
         if (filterText === 'plantas') category = 'plantas';
         else if (filterText === 'materas') category = 'materas';
         else if (filterText === 'madera') category = 'madera';
+         else if (filterText === 'joyas') category = 'joyas';
     }
 
     let filtered = products;
@@ -291,13 +298,13 @@ function selectPayment(method) {
 
     switch (method) {
         case 'nequi':
-            text = '💰 *Nequi*\nNúmero: 3233445403\nA nombre de: GreenWood Tienda\n\n*Pasos:*\n1. Abre Nequi\n2. Selecciona "Enviar dinero"\n3. Ingresa el número y el valor total\n4. Confirma y envía el comprobante por este chat';
+            text = '💰 *Nequi*\nNúmero: 3233445403\nA nombre de: Ding Dong ¡El arte de regalar!\n\n*Pasos:*\n1. Abre Nequi\n2. Selecciona "Enviar dinero"\n3. Ingresa el número y el valor total\n4. Confirma y envía el comprobante por este chat';
             break;
         case 'daviplata':
-            text = '💰 *DaviPlata*\nNúmero: 3233445403\nA nombre de: GreenWood Tienda\n\n*Pasos:*\n1. Abre DaviPlata\n2. Selecciona "Enviar dinero"\n3. Ingresa el número y el valor total\n4. Confirma y envía el comprobante por este chat';
+            text = '💰 *DaviPlata*\nNúmero: 3233445403\nA nombre de: Ding Dong ¡El arte de regalar!\n\n*Pasos:*\n1. Abre DaviPlata\n2. Selecciona "Enviar dinero"\n3. Ingresa el número y el valor total\n4. Confirma y envía el comprobante por este chat';
             break;
         case 'dale':
-            text = '💰 *Dale*\nNúmero: 3233445403\nA nombre de: GreenWood Tienda\n\n*Pasos:*\n1. Abre Dale\n2. Selecciona "Enviar dinero"\n3. Ingresa el número y el valor total\n4. Confirma y envía el comprobante por este chat';
+            text = '💰 *Dale*\nNúmero: 3233445403\nA nombre de: Ding Dong ¡El arte de regalar!\n\n*Pasos:*\n1. Abre Dale\n2. Selecciona "Enviar dinero"\n3. Ingresa el número y el valor total\n4. Confirma y envía el comprobante por este chat';
             break;
         case 'tarjeta':
             text = '💳 *Pago con tarjeta*\nAceptamos todas las tarjetas de crédito y débito.\n\n*Pasos:*\n1. Te enviaremos un enlace seguro de pago\n2. Ingresa los datos de tu tarjeta\n3. Confirma la transacción\n\nNota: El enlace se enviará por WhatsApp';
