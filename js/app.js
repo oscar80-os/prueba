@@ -72,6 +72,16 @@ function loadSampleProducts() {
         { id: '13', name: 'Aretes plata S925', description: 'Aretes plata con circones ', price: 130000, category: 'joyas', image: './img/aretesPlata.png' },
         { id: '14', name: 'Cadena plata S925', description: 'Cadena con dije de rama ', price: 150000, category: 'joyas', image: './img/cadenaDijePlata.png' },
         { id: '15', name: 'Cadena plata S925', description: 'Cadena con dije de hoja  ', price: 145000, category: 'joyas', image: './img/collarDijePlata.png' },
+        { id: '16', name: 'Estante metal amarillo', description: 'Estante perfecto para tus materas  ', price: 345000, category: 'forja', image: './img/estanteAmarillo.png' },
+        { id: '17', name: 'Estante doble colores surtidos', description: 'Decora tu pared, doble con estos estantes  ', price: 245000, category: 'forja', image: './img/estanteDoble.png' },
+        { id: '18', name: 'Estante metal amarillo pared', description: 'Estante perfecto para tus materas  ', price: 185000, category: 'forja', image: './img/estantePared.png' },
+        { id: '19', name: 'Estante metal colores', description: 'Estante unitarios con colores surtidos  ', price: 365000, category: 'forja', image: './img/estantePared2.png' },
+        { id: '20', name: 'Estante combinado', description: 'Estante perfecto para tus materas  ', price: 285000, category: 'forja', image: './img/estantePared3.png' },
+        { id: '21', name: 'Estante metal rojo', description: 'Estante perfecto para tus materas  ', price: 345000, category: 'forja', image: './img/estanteRojo.png' },
+        { id: '22', name: 'Curso cactus y suculentas', description: 'Aprende todo sobre tus cactus y suculentas  ', price: 120000, category: 'cursos', image: './img/cursoCactus.png' },
+        { id: '23', name: 'Curso Bonsái', description: 'Aprende todo sobre el bonsái y sus cuidados  ', price: 150000, category: 'cursos', image: './img/cursoBonsai1.png' },
+        { id: '24', name: 'Curso Plantas Exterior', description: 'Aprende todo sobre palntar tu jardin  ', price: 120000, category: 'cursos', image: './img/cursoExterior.png' },
+        
     ]; 
     applyFiltersAndSearch();
 }
@@ -85,7 +95,9 @@ function applyFiltersAndSearch() {
         if (filterText === 'plantas') category = 'plantas';
         else if (filterText === 'materas') category = 'materas';
         else if (filterText === 'madera') category = 'madera';
-         else if (filterText === 'joyas') category = 'joyas';
+        else if (filterText === 'joyas') category = 'joyas';
+        else if (filterText === 'forja') category = 'forja';
+        else if (filterText === 'cursos') category = 'cursos';
     }
 
     let filtered = products;
